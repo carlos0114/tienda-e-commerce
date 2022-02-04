@@ -1,6 +1,5 @@
 import React from 'react';
-
-const NavBar = () => {
+ const NavBar = () => {
   return (
 
 <>
@@ -34,8 +33,8 @@ const NavBar = () => {
 </>
 
 
-  );
-  
-};
+  )
+   };
+
 
 export default NavBar;
