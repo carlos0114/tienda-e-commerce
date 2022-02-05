@@ -1,7 +1,7 @@
-import React from 'react';
-import './NavBar.css'; 
+//import React from 'react';
+//import './NavBar.css'; 
 
-function NavBar() {
+////function NavBar() {
     return(
       <header className="header">
         <nav className="nav">
@@ -19,4 +19,4 @@ function NavBar() {
       
     )
 }
-export default NavBar;
+//export default NavBar;
