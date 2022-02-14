@@ -1,13 +1,16 @@
 import React from 'react';
 import { Nav,NavLink,Bars,NavMenu,NavBtn,NavBtnLink } from './NavBarElement';
- const NavBar = () => {
+import { Carrito } from '../carrito/Carrito';
+const NavBar = () => {
   return (
 <>
+                          {/* todo esto es la barra navbar */}
 <Nav>
     <NavLink to="/">
-      <h1>Super Car</h1>
-    </NavLink> 
+   
+    </NavLink>  
     <Bars />
+    <Carrito/>
     <NavMenu>
       
       <NavLink to="/about" activeStyle> 
@@ -26,7 +29,7 @@ import { Nav,NavLink,Bars,NavMenu,NavBtn,NavBtnLink } from './NavBarElement';
     </NavMenu>
     <NavBtn>
         <NavBtnLink to="/signin">Sign In</NavBtnLink>
-    </NavBtn>
+    </NavBtn> 
 </Nav>
 
 </>

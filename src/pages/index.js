@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+const Index = () => {
   return (
     <div style={{
       display: 'flex',
@@ -16,5 +16,5 @@ const Home = () => {
   
 };
 
-export default Home;
+export default Index;
 
