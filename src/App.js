@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import ItemCount from './componentes/ItemCount';
+import ItemListContainer from './componentes/ItemListContainer';
 import NavBar from './componentes/NavBar'; 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Count from './componentes/contador/Count';
 import Home from './pages/index';
 import About from './pages/about';
 
@@ -18,7 +19,8 @@ function App() {
 </Routes>
 </BrowserRouter> 
 {/* De aca para abajo se colocan las rutas de todos los componentes  */}
-<Count />
+<ItemCount />
+<ItemListContainer />
 
 </>
 

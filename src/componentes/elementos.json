@@ -1,0 +1,37 @@
+[
+    {
+        "id":"1",
+        "name": "FORD A 1931",
+        "price":"27000",
+        "description":"UNICA EN EL PAIS TODO ORIGINAL.",
+        "stock":1,
+        "ruta":"http://buscandocasa.com/galeria/pegarlogo_fotos.asp?f=175&pos=5&trans=50&ctrans=ff0000"
+          
+    },
+    {
+        "id":"2",
+        "name": "FORD A 1923",
+        "price":"4750",
+        "description":"SOLO 2 BELLAS MAQUINAS ESTAN QUEDAND.",
+        "stock":2,
+        "ruta":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdw2nMtDk3OtdIqo4TSKBIvdbTvyQDxGLcsuulO54aub47NuQOgK8Bl33ZH3Z0Cbs808M&usqp=CAU"
+    },
+    {
+        "id":"3",
+        "name": "FORD A 1925",
+        "price":"7900",
+        "description":"UNICA, CASI ORIGINAL.",
+        "stock":1,
+        "ruta":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRoh7WIqL6QIgcpGdJsgJldhvIR3DRREUo1h_XO7PPdA_d1BBeZ68btcaHs5DXmqslNZE&usqp=CAU"
+          
+    },
+    {
+        "id":"4",
+        "name": "FORD A 1920",
+        "price":"5200",
+        "description":"UNICA, TODO ORIGINAL.",
+        "stock":1,
+        "ruta":"https://aconteceres.uy/wp-content/uploads/2018/05/A.uy_2018_06_fordA_1068.jpg"
+          
+    }
+]
