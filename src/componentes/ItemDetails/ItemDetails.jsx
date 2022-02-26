@@ -1,35 +1,28 @@
 import React from "react";
-import "../NavBar/NavBar.css";
-import "./ItemDetails.css";
-import logo from "../NavBar/rose.png";
-import { useParams } from 'react-router-dom';
-import baseDeDatos from "../ListContainer/productos.json";
+import "../NavBar/NavBar.css"
+import "./ItemDetails.css"
+import baseDeDatos from "../ItemListContainer/productos.json"
+import ItemCount from "../ItemCount/ItemCount"
+import { useParams } from "react-router-dom";
+import NavBar from "../NavBar/NavBar";
 
 export default function ItemDetails(){
-    
+
     const {id}=useParams()
-    console.log(id)
-    console.log(baseDeDatos)
-    console.log(baseDeDatos[id].img)
 
     return(
         <div>
             <div>
-                <div className="cabecero" id="cabecero">
-                    <a href="/"><h1 className="tituloI">cachilas</h1></a>
-                    <div>
-                        <a href="/"><img src={logo} alt="LOGO"/></a>
-                        <br/>
-                        <a href="/">Supercar</a>
-                    </div>
-                    <a href="/"><h1 className="tituloD">antiguas</h1></a>
-                </div>
+                <NavBar/>
                 <div className="ItemContainerDetail">
                     <h1>{baseDeDatos[id].name}</h1>
                     <img src={baseDeDatos[id].img} alt={baseDeDatos[id].name}/>
-                    <p>{baseDeDatos[id].description}</p>
+                    <h2>{baseDeDatos[id].description}</h2>
                     <p>{baseDeDatos[id].descriptionExtra}</p>
                     <p className="ItemPriceDetail">$ {baseDeDatos[id].precioUnidad}</p>
+                    <div className="ItemCount">
+                        <ItemCount numberStock={baseDeDatos[id].stock} initial={1} keyId={baseDeDatos[id].id} precio={baseDeDatos[id].precioUnidad}/>
+                    </div>
                 </div>
             </div>
         </div>

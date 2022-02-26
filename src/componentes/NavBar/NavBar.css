@@ -75,8 +75,8 @@
   }
   
   .nav-link:hover {
-    background-color: #564bf3;
-    color: #4f7976 !important;
+    background-color: #8b84eb;
+    color: #3d6d6a !important;
   }
 
 .Cart{
@@ -89,7 +89,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 1.4vw;
-  background-color: #554dc4;
+  background-color: #b3aeff;
   padding-top: 15px;
   justify-content: center;
   position: fixed;
