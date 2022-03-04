@@ -23,13 +23,13 @@ export default function ItemDetailsContainer(){
             <>{info ? (
                 <>
                     <div className="cabecero" id="cabecero">
-                        <a href="/"><h1 className="tituloI">ROSÉ</h1></a>
+                        <a href="/"><h1 className="tituloI">cachilas</h1></a>
                         <div>
                             <a href="/"><img src={logo} alt="LOGO"/></a>
                             <br/>
-                            <a href="/">By Carolina</a>
+                            <a href="/">FORD A</a>
                         </div>
-                        <a href="/"><h1 className="tituloD">AROMAS</h1></a>
+                        <a href="/"><h1 className="tituloD">antiguos</h1></a>
                     </div>
                     <p className="ItemTitle-center">{mensaje}</p>
                 </>
