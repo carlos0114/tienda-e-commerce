@@ -2,6 +2,7 @@ import React from 'react';
 import './NavBar.css';
 import logo from './rose.png';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 export default  function NavBar(){
 
@@ -22,12 +23,18 @@ export default  function NavBar(){
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        
-                        <a className="nav-link" href="biografia.html">¿Quiénes somos?</a>
-                        <a className="nav-link" href="productos.html"> Sobre nuestros modelos</a>
-                        <a className="nav-link" href="tienda.html"> Clasicos</a><br></br><br></br>
-                        <a className="nav-link" href="refill.html">Stock</a>
+                <div className="navbar-nav">
+                      
+                      
+                        <Link to={"/NuestrosProd"}>
+                            <p className="nav-link">Sobre nuestros productos</p>
+                        </Link>
+                        <Link to={"/"}>
+                            <p className="nav-link">Tienda</p>
+                        </Link>
+                        <Link to={"/Refill"}>
+                            <p className="nav-link">Refill</p>
+                        </Link>
                     </div>
                 </div>
                 <CartWidget />

@@ -1,31 +1,22 @@
-import React, {useState,useEffect} from 'react';
+import React, {useContext} from 'react';
 import "./ItemList.css"
-import baseDeDatos from "./productos.json"
 import ItemList from '../ItemList/ItemList';
+import { CartContext } from '../../Context/CartContext';
+
 
 export default function ItemListContainer(){
 
-    const [productos, setProductos] = useState([])
-
-    const [info, setInfo] = useState(true)
+    const {productos}=useContext(CartContext)
+    
     const mensaje = "Cargando..."
 
-    useEffect(()=>{
-        const prodPromise = new Promise((resolve,reject)=>{
-            setTimeout(() => {
-                setProductos(baseDeDatos)
-                setInfo(false)
-                resolve(true)
-            }, 2000);
-        })
-        prodPromise.then(()=>{console.log("COMPLETADO")})
-        prodPromise.catch(()=>{console.log("ERROR 404")})
-    },[])
-
         return(
-            <>{info ? (<p className="ItemTitle-center">{mensaje}</p>
+            <>{productos===[] ? (<p className="ItemTitle-center">{mensaje}</p>
                 ) : (
-                    <ItemList productos={productos}/>
+                    <>
+                    
+                        <ItemList/>
+                    </>
                 )}
             </>
         )
