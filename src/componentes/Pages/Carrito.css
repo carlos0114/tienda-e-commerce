@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+.CartContainer{
+    background-color: rgb(161, 183, 196);
+    width: 80%;
+    margin: 70px auto;
+    border-radius: 10px;
+    min-height: 300px;
+    display: flex;
+}
+.CartContainer-1{
+    width: 70%;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+.CartContainer-2{
+    width: 30%;
+    border-left: 5px solid #489696;
+}
+.ListaItem-line{
+    margin-top: 10px;
+    display: flex;
+}
+.ListaItem li{
+    list-style:none;
+    background-color: rgb(127, 159, 165);
+    padding: 0 10px;
+}
+.ListaItem-Name{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-radius: 5px 0 0 5px;
+}
+.ListaItem-Cant{
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+.ListaItem-Cant p{
+    margin: 0 30px;
+    cursor: pointer;
+}
+.ListaItem-precio{
+    display: flex;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+    width: 80px;
+    text-align: center;
+}
+.ListaItem-x{
+    margin-left: 30px;
+    color: rgb(83, 13, 13);
+    cursor: pointer;
+}
+.agregarProductos{
+    color: black;
+}
+.container-agregarP{
+    width: 40%;
+}
+.h6-volver{
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    margin-top: 60px;
+}
+.vaciarCarrito{
+    background-color: #489696;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 150px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1vw;
+}
+.vaciarCarrito:hover{
+    background-color: aliceblue;
+}
+.CartContainer-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.containerInfo{
+    width: 80%;
+    background-color: #489696;
+    border-radius: 10px;
+    font-size: 2vw;
+    padding: 5px;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+.containerInfo p{
+    margin-left: 15px;
+}
+.botonPagar{
+    background-color: #489696;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px auto;
+    font-size: 1.5vw;
+}
+.botonPagar:hover{
+    background-color: aliceblue;
+}
+.form-pay{
+    height: 100%;
+}
+input{
+    width: 70%;
+    border: 1px lightsteelblue solid;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    margin-left: 10px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+label{
+    font-size: 1.3vw;
+    margin-left: 5px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+.validacion-pago{
+    width: 100%;
+    color: rgb(19, 70, 53);
+    text-align: center;
+    font-size: 1.2vw;
+}
+.container-numPedido{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2vw;
+    justify-content: center;
+    margin: 20px;
+    color: rgb(19, 70, 53);
+}
+.container-numero{
+    font-size: 1.4vw;
+    text-align: center;
+    user-select: text;
+}

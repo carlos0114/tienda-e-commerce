@@ -1,4 +1,4 @@
- import React,{useContext,useEffect,useState} from "react"
+import React,{useContext,useEffect,useState} from "react"
 import Items from "../Items/Items"
 import { CartContext } from '../../Context/CartContext';
 import { useParams } from "react-router-dom";
@@ -21,7 +21,7 @@ export default function ItemList(){
         }else{
             setFiltros(productos.filter(prod=>prod.Categoria === categoria))
         }
-    },[categoria,productos])
+    },[categoria])
 
     return(
             <div className='itemContainer'>
@@ -43,4 +43,4 @@ export default function ItemList(){
                 )}
             </div>
     )
-} 
+}

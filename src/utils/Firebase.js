@@ -1,6 +1,5 @@
-
 import { initializeApp } from "firebase/app"
-import { collection, getDoc, getFirestore } from "firebase/firestore"
+import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
     apiKey: "AIzaSyDB8UIBchRKS1NxBvy0jeRw-0itGCwGmqI",
@@ -10,13 +9,8 @@ const firebaseConfig = {
     messagingSenderId: "731285718749",
     appId: "1:731285718749:web:94f29aa33d6b5edfb9bd34"
   }
-  export const app = initializeApp(firebaseConfig)
-   const db = getFirestore ()
+  const app = initializeApp(firebaseConfig)
+  export const db = getFirestore (app)
 
 
-  export default db 
-  // traer todos los items
-  export const getItems = async () => {
-    const items = await getDoc(collection(db, "items"))
-    return items
-  }
+  
