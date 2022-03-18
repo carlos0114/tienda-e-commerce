@@ -1,6 +1,5 @@
 import React,{useState,createContext,useEffect} from "react";
 
-
 export const CartContext = createContext()
 
 export const UseCartContext = ({children})=>{
@@ -9,7 +8,6 @@ export const UseCartContext = ({children})=>{
     const [cant,setCant]=useState(0)
     const [update,setUpdate]=useState(false)
     const [precio,setPrecio]=useState(0)
-
 
     const AddItem = (item)=>{
         if(!isInCart(item.id)){
@@ -56,11 +54,9 @@ export const UseCartContext = ({children})=>{
         precioFinal()
     })
 
-  
 
     return(
-        <CartContext.Provider value={{arrayCarrito,AddItem,cantidadCarrito,borrarDelCarrito,
-        vaciarCarrito,cant,precio}}>
+        <CartContext.Provider value={{arrayCarrito,AddItem,cantidadCarrito,borrarDelCarrito,vaciarCarrito,cant,precio}}>
             {children}
         </CartContext.Provider>
     )
